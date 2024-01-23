@@ -1,12 +1,14 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpensItem from "./components/Expensitem.js";
 
 function App() {
   return (
-    <div className="App">
-   <ExpenseItem ></ExpenseItem >
-    <p>this is also visible</p>
+    <div>
+      <h2>Lets get started</h2>
+      <ExpensItem />
+      <ExpensItem />
+      <ExpensItem />
     </div>
   );
-} 
+}
 
 export default App;
