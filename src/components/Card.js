@@ -1,11 +1,7 @@
-import'./Card.css';
+import React from "react";
+import "./Card.css";
 function Card(props) {
-    return(
-<div>
-
-
-</div>
-
-    );
-    
+    const combine ='card' + props.className;
+  return <div className={combine}>{props.children}</div>;
 }
+export default Card;
