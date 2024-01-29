@@ -2,6 +2,8 @@ import React from 'react';
 import Expens from "./components/Expens.js";
 import NewExpense from './components/NewExpense.js';
 function App() {
+
+
   const expens = [
     {
       id: "e1",
@@ -29,9 +31,17 @@ function App() {
       date: new Date(2028, 4, 28),
     },
   ];
+
+
+  const saveExpenseDataHandler = (NewData) => {
+
+    console.log("in App.js file")
+    console.log(NewData);
+    
+      }
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onsaveExpenseData={saveExpenseDataHandler}/>
       <Expens items={expens} />
 </div> 
   );

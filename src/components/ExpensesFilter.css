@@ -1,0 +1,30 @@
+.expense-filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.expense-filter-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 50rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.expense-filter-control  select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  background-color: rgb(92, 185, 178);
+    border-radius: 12px;
+  }
+  .expense-filter-control  label{
+    
+font-weight: bold;
+font: inherit;
+color: aliceblue;
+ font-size: 18px;
+  }
