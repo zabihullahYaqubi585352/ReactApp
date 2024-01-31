@@ -6,7 +6,7 @@
 }
 .expense-filter-control {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   width: 50rem;
@@ -18,8 +18,10 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
-  background-color: rgb(92, 185, 178);
+  background-color: rgb(235, 241, 241);
     border-radius: 12px;
+    width: 10rem;
+    text-align: center;
   }
   .expense-filter-control  label{
     
