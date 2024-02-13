@@ -5,6 +5,7 @@ const ExpenseForm = (props) => {
     const[entertitle,setentertitle]=useState('');
     const[enteramount,setenteramount]=useState('');
     const[enterdate,setenterdate]=useState('');
+
     function titlechangehandler(event) {
       setentertitle(event.target.value);
         
@@ -21,8 +22,8 @@ const ExpenseForm = (props) => {
 event.preventDefault();
 
 const expenseData={
-title:entertitle,
-amount:enteramount,
+Title:entertitle,
+Amount:enteramount,
 date:new Date(enterdate)
 };
 props.onsaveexpense(expenseData);
@@ -48,7 +49,9 @@ setenterdate("");
         </div>
       </div>
       <div className='new-expense-control-action'>
+      <button type="submit">cancle</button>
         <button type="submit">Add Expense</button>
+        
       </div>
     </form>
   );
