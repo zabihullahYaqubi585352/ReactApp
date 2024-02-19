@@ -7,5 +7,21 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.addNewButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.addNewButton button{
+background-color: #5d4a9c;
+padding: 20px;
+border: 1px solid #866ed3;
+border-radius: 10px;
 
 }

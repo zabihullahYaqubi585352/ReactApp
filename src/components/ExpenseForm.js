@@ -32,6 +32,10 @@ setenteramount("");
 setenterdate("");
     
    } 
+   function onHideForm() {
+    props.onhidex();
+    
+   }
   return (
     <form onSubmit={submitForm}>
       <div className="new-expense-control">
@@ -49,8 +53,8 @@ setenterdate("");
         </div>
       </div>
       <div className='new-expense-control-action'>
-      <button type="submit">cancle</button>
-        <button type="submit">Add Expense</button>
+      <button onClick={onHideForm}>cancle</button>
+        <button type="submit" >Add Expense</button>
         
       </div>
     </form>
