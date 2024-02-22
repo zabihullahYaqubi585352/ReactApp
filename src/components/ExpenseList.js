@@ -2,7 +2,7 @@ import ExpensItem from "./ExpenseItem"
 import './ExpenseList.css';
 const ExpenseList=(props) =>{
     
-    if (props.items.length===0) {
+    if (props.items.length==0) {
         return <h2 className="expense-List__falback">No Expense Founded</h2>
     }
     return(

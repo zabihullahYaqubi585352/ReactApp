@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Expens from "./components/Expens.js";
 import NewExpense from "./components/NewExpense.js";
 
-const INITIONAL_EXPENSE= [
+const INITIONAL_EXPENSE = [
   {
     id: "e1",
     Title: "Car Insurance",
@@ -20,13 +20,25 @@ const INITIONAL_EXPENSE= [
     id: "e3",
     Title: "califonia",
     Amount: 43.53,
-    date: new Date(2022, 3, 28),
+    date: new Date(2022, 2, 28),
   },
   {
     id: "e4",
     Title: "New Yourk",
     Amount: 30.53,
-    date: new Date(2023, 4, 28),
+    date: new Date(2022, 4, 28),
+  },
+  {
+    id: "e5",
+    Title: "city",
+    Amount: 30.53,
+    date: new Date(2022, 3, 28),
+  },
+  {
+    id: "e6",
+    Title: "france",
+    Amount: 30.53,
+    date: new Date(2022, 5, 28),
   },
 ];
 
@@ -36,11 +48,7 @@ function App() {
   const saveExpenseDataHandler = (NewData) => {
     setexpens((preexpense) => {
       return [NewData, ...preexpense];
-      
-     
     });
-  
-
   };
   return (
     <div>
